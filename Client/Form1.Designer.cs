@@ -119,7 +119,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RichTextBox rtbBlocco;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label lblContatoreTick;
+        public System.Windows.Forms.Label lblContatoreTick;
     }
 }
 

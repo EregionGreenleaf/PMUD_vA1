@@ -61,7 +61,7 @@ namespace Test01
          * FINE SETTERS
          */
 
-        public void NuovaStanza(int contPagina, int id)
+        public void NuovaStanza(int id)
         {
             string strID = id.ToString();
             int contPaginaAtt = 1;

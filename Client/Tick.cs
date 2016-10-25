@@ -7,13 +7,22 @@ using System.Threading;
 
 namespace Client
 {
-    class Tick
+    public class Tick
     {
         private volatile bool _shouldStop;
         private int Contatore = 1;
         public void EseguiTick()
         {
-            frmClient.SetLabelContatore(Contatore.ToString());
+            while (!_shouldStop)
+            {
+                frmClient form = new frmClient();
+                form.lblContatoreTick.Text = Contatore.ToString();
+            }
+        }
+
+        public void Ferma()
+        {
+            _shouldStop = true;
         }
 
     }

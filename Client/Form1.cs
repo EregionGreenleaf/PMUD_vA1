@@ -23,14 +23,12 @@ namespace Client
         private void button1_Click(object sender, EventArgs e)
         {
             Stanza provaStanza = new Stanza();
-            //provaStanza = Stanza.ParseStanza(Config.FoglioStanza, "Salone");
-            provaStanza.NuovaStanza(1, 1);
+            provaStanza.NuovaStanza(1);
 
             ElaboraTesto.Recursione += 1;
             ElaboraTesto.StampaTesto(rtbBlocco, Convert.ToString(ElaboraTesto.Recursione));
 
             ElaboraTesto.StampaStanza(rtbBlocco, provaStanza);
-            //textBox1.AppendText(Environment.NewLine + provaStanza.Nome + Environment.NewLine + provaStanza.Descrizione);
         }
 
         private void frmClient_Load(object sender, EventArgs e)
@@ -38,13 +36,13 @@ namespace Client
 
         }
 
-        static void SetLabelContatore(string valore)
-        {
-            lblContatoreTick.Text = valore;
-        }
-        public string GetLabelContatore()
-        {
-            return this.lblContatoreTick.Text;
-        }
+        //static void SetLabelContatore(string valore)
+        //{
+        //    lblContatoreTick.Text = valore;
+        //}
+        //public string GetLabelContatore()
+        //{
+        //    return this.lblContatoreTick.Text;
+        //}
     }
 }
