@@ -9,7 +9,6 @@ using Test01;
 
 namespace Client
 {
-
     public static class ControlExtensions
     {
         [System.Runtime.InteropServices.DllImport("user32.dll")]
