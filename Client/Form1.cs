@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Test01;
-//using Test01;
 
 namespace Client
 {
@@ -39,14 +38,5 @@ namespace Client
         {
 
         }
-
-        //static void SetLabelContatore(string valore)
-        //{
-        //    lblContatoreTick.Text = valore;
-        //}
-        //public string GetLabelContatore()
-        //{
-        //    return this.lblContatoreTick.Text;
-        //}
     }
 }

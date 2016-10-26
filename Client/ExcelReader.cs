@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 namespace Test01
 {
-
     class ExcelReader
     {
         private string File;
@@ -16,6 +15,7 @@ namespace Test01
         {
             File = file;
         }
+
         public IEnumerable<worksheet> GetWorksheet()
         {
             return Workbook.Worksheets(File);

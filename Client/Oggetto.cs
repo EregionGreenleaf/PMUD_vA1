@@ -39,7 +39,6 @@ namespace Client
             string strID = ID.ToString();
             int contPaginaAtt = 1;
             var Test = new ExcelReader(Config.FileCompleto);
-            //foreach(var paginaAtt in Workbook.Worksheets(@"C:\UTIL_EXTRA\Test.xlsx"))   //Per ogni Foglio
             foreach (var paginaAtt in Test.GetWorksheet())   //Per ogni Foglio
             {
                 if (contPaginaAtt == Config.PAGINA_OGGETTI)                                        //Controllo se il Foglio attuale è quello cercato (contPagina)
@@ -66,20 +65,7 @@ namespace Client
                             int valore = 0;
                             int.TryParse(Riga.Cells[4].Text, out valore);
                             Valore = valore;
-
-                            //foreach (var ogg in Tipo)
-                            //{
-                            //    OggettiStanza.Add(new Oggetto(id: ogg));
-                            //}
-
-                            //StringaPerson = Riga.Cells[4].Text;
-
                         }
-
-                        //foreach(var Cella in Riga.Cells)                                //Per ogni Colonna
-                        //{
-                        //    ColonnaAtt += 1;
-                        //}
                         RigaAtt += 1;
                     }
                 }
