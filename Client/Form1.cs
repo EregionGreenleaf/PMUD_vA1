@@ -22,6 +22,10 @@ namespace Client
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            MultiThreading TT = new MultiThreading();
+            TT.StartTick();
+
             Stanza provaStanza = new Stanza();
             provaStanza.NuovaStanza(1);
 

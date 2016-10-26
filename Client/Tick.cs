@@ -11,6 +11,12 @@ namespace Client
     {
         private volatile bool _shouldStop;
         private int Contatore = 1;
+
+        public Tick()
+        {
+            _shouldStop = false;
+        }
+
         public void EseguiTick()
         {
             while (!_shouldStop)

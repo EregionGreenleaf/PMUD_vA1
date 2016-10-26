@@ -114,6 +114,28 @@ namespace Test01
             }
         }
 
+        /// <summary>
+        /// Restituisce l'indice dell'oggetto nella lista.
+        /// </summary>
+        /// <param name="nome"></param>
+        /// <returns></returns>
+        public int CercaOggetto(string nome)
+        {
+            int index = -1;
+            int contatore = 0;
+            foreach (var x in OggettiStanza)
+            {
+                if (x.Nome == nome)
+                {
+                    index = contatore;
+                    break;
+                }
+                contatore += 1;
+            }
+            return contatore;
+        }
+
+
 
         //public static Stanza ParseStanza(string Sheet, Stanza oggStanza, int id )
         //public static Stanza ParseStanza(string Sheet, string nome)
