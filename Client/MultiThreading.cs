@@ -9,6 +9,7 @@ namespace Client
 {
     public class MultiThreading
     {
+
         public void StartTick()
         {
             Tick tick = new Tick();
