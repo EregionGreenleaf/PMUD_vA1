@@ -17,7 +17,8 @@ namespace Client
         public int? Peso { get; set; }
 
         public Oggetto(int? id = null, string nome = null,
-                      string descrizione = null, string tipo = null, int? valore = null, int? peso = null)
+                      string descrizione = null, string tipo = null,
+                      int? valore = null, int? peso = null)
         {
             ID = id;
             /*Nome = nome;
@@ -26,7 +27,6 @@ namespace Client
             Valore = valore;
             Peso = peso*/
             this.RiempiOggetto();
-
         }
 
         public void SetValore ( int valore )

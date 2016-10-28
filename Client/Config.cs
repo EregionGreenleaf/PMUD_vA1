@@ -26,12 +26,5 @@ namespace Test01
         public static int STANZE_COLONNE = 6;       //Numero di colonne nella pagina Stanze
         public static int OGGETTI_COLONNE = 6;      //Numero di colonne nella pagina Oggetti
         public static int OGGETTI_TIPOOGGETTI = 6;  //Numero di colonne nella pagina TipoOggetti
-
-        public enum Pagina
-        {
-            Stanze,
-            Oggetti,
-            Speciale
-        }
     }
 }
